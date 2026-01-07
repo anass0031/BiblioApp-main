@@ -42,9 +42,6 @@ CREATE TABLE comments (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-INSERT INTO users (username, email, password, role) 
-VALUES ('Admin', 'admin@admin.com', 'admin', 'admin');
-
 INSERT INTO genres (name) VALUES
 ('Aventure'),
 ('Fantastique'),
